@@ -36,16 +36,27 @@
 
 /* DESKTOP VERSION */
 
+body {
+    background: var(--body-bg);
+    width: 100%;
+    height: auto;
+    padding: 6% 22% 6% 22%;
+}
+
+#body-bg {
+    background: var(--content-bg);
+    border-radius: 12px;
+}
+
 #page-padding {
     padding: 0px 32px;
 }
 #banner-img {
-    width: 91.67%;
+    width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 12px;
-    margin-left: 32px;
-    margin-top: 32px;
+    padding: 32px 32px 0px 32px;
 }
 h1 {
     font-size: 2.5rem;
@@ -190,6 +201,12 @@ ol li::marker {
 /* MOBILE VERSION */
 
 @media only screen and (max-width: 425px) {
+    body {
+        background: var(--body-bg);
+        width: 100%;
+        height: auto;
+        padding: 0% 0% 0% 0%;
+    }
     #page-padding {
         padding: 0px 32px;
     }
