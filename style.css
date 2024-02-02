@@ -40,10 +40,10 @@ body {
     background: var(--body-bg);
     width: 100%;
     height: auto;
-    padding: 6% 22% 6% 22%;
+    padding: 5% 22% 5% 22%;
 }
 
-#body-bg {
+#content-bg {
     background: var(--content-bg);
     border-radius: 12px;
 }
@@ -127,6 +127,7 @@ ol li::marker {
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(4, 1fr);
     height: auto;
+    padding-bottom: 32px;
 }
 #calories {
     grid-column: 1 / 2;
@@ -202,9 +203,9 @@ ol li::marker {
 
 @media only screen and (max-width: 425px) {
     body {
-        background: var(--body-bg);
+        background: var(--content-bg);
         width: 100%;
-        height: auto;
+        height: 0%;
         padding: 0% 0% 0% 0%;
     }
     #page-padding {
@@ -289,6 +290,7 @@ ol li::marker {
         grid-template-columns: 50% 50%;
         grid-template-rows: repeat(4, 1fr);
         height: auto;
+        padding-bottom: 0px;
     }
     #calories {
         grid-column: 1 / 2;
