@@ -51,24 +51,32 @@ body {
 #page-padding {
     padding: 0px 32px;
 }
+
+header {
+    text-align: center;
+}
+
 #banner-img {
-    width: 100%;
+    width: calc(100% - 64px);
     height: auto;
     object-fit: cover;
     border-radius: 12px;
-    padding: 32px 32px 0px 32px;
+    margin: 32px 0 0 0;
 }
+
 h1 {
     font-size: 2.5rem;
     color: var(--color-h1);
     margin: 40px 0px;
     font-family: var(--font-h1);
 }
+
 p {
     color: var(--color-body);
     font-family: var(--font-body);
     margin-bottom: 32px;
 }
+
 .prep-time {
     background-color: var(--preparation-bg);
     height: auto;
@@ -76,52 +84,63 @@ p {
     border-radius: 12px;
     margin-bottom: 32px;
 }
+
 h3 {
     color: var(--color-h3);
     font-family: var(--font-h3);
     font-size: 1.25rem;
     margin-bottom: 16px;
 }
+
 ul {
     list-style-type: square;
     padding-left: 24px;
 }
+
 ul li::marker {
     color: var(--color-list);
 }
+
 li {
     color: var(--color-body);
     padding-left: 16px;
     font-family: var(--font-body);
     padding-bottom: 8px;
 }
+
 h2 {
     font-family: var(--font-h2);
     color: var(--color-h2);
     margin-bottom: 24px;
     font-size: 1.75rem;
 }
+
 .ingredients {
     padding-bottom: 32px;
     margin-bottom: 32px;
     border-bottom: 1px #E3DDD7 solid;
 }
+
 .instructions {
     padding-bottom: 32px;
     margin-bottom: 32px;
     border-bottom: 1px #E3DDD7 solid;
 }
+
 ol {
     list-style-type: decimal;
     padding-left: 24px;
 }
+
 ol li::marker {
     color: var(--color-list);
     font-weight: bold;
 }
+
 .nutrition {
     margin-bottom: 32px;
 }
+
 #nutrition-grid {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -129,6 +148,7 @@ ol li::marker {
     height: auto;
     padding-bottom: 32px;
 }
+
 #calories {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -137,6 +157,7 @@ ol li::marker {
     margin-bottom: 12px;
     border-bottom: 1px #E3DDD7 solid;
 }
+
 #calories-number {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -146,6 +167,7 @@ ol li::marker {
     margin-bottom: 12px;
     border-bottom: 1px #E3DDD7 solid;
 }
+
 #carbs {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
@@ -154,6 +176,7 @@ ol li::marker {
     margin-bottom: 12px;
     border-bottom: 1px #E3DDD7 solid;
 }
+
 #carbs-number {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -163,6 +186,7 @@ ol li::marker {
     margin-bottom: 12px;
     border-bottom: 1px #E3DDD7 solid;
 }
+
 #protein {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
@@ -171,6 +195,7 @@ ol li::marker {
     margin-bottom: 12px;
     border-bottom: 1px #E3DDD7 solid;
 }
+
 #protein-number {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
@@ -180,6 +205,7 @@ ol li::marker {
     margin-bottom: 12px;
     border-bottom: 1px #E3DDD7 solid;
 }
+
 #fat {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
@@ -189,6 +215,7 @@ ol li::marker {
     border-bottom: 1px #E3DDD7 solid;
     width: 100%;
 }
+
 #fat-number {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
